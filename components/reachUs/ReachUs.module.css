@@ -1,0 +1,59 @@
+.reach_us {
+  /* margin: 0 20px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.left {
+  padding: 12px 13px;
+}
+
+.left span {
+  font-size: 13px;
+  color: #676767;
+}
+
+.left h3 {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  background: #ddfff2;
+  padding: 5px 12px;
+  border-radius: 10px;
+  color: #139a68;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.right {
+  width: 30%;
+  position: relative;
+}
+
+.grad_wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.grad {
+  border-radius: 50%;
+  transform: translateY(-10%);
+  height: 140%;
+  width: 140%;
+  background: linear-gradient(180deg, #ddfff2 0%, #28ad7c 100%);
+}
+
+.img {
+  object-fit: contain;
+  transform: translate(20%, -10%);
+}

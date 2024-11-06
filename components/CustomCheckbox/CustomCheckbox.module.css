@@ -1,0 +1,8 @@
+.input[type="checkbox"]:checked ~  .custom_checkbox {
+    background-color: rgb(19 154 104); /* Change to your desired color */
+    border-color: rgb(19 154 104);
+    color: white; /* Change to your desired color */
+  }
+  .input[type="checkbox"]:checked ~ .font_icon{
+    color: white !important;
+  }
