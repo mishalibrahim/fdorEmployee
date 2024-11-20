@@ -59,13 +59,13 @@ export default function Home() {
       <div className="flex flex-col root-layout mt-[22px]">
         <DeliveryInsight />
         <div className="flex gap-[17px] flex-col mt-[18px]">
-        <PreDeliveryCheckListDailog/>
-            <HomeQuickLinkCard
+          <PreDeliveryCheckListDailog />
+          <HomeQuickLinkCard
             title={"Confirm Packets"}
             icon={"/assets/home_insight_packet.svg"}
             desc={"Confirm the packet count before ride"}
           />
-            <HomeQuickLinkCard
+          <HomeQuickLinkCard
             title={"Start The Ride"}
             icon={"/assets/start_ride.svg"}
             desc={"Deliver the happiness"}
@@ -75,7 +75,7 @@ export default function Home() {
           <ReachUs />
         </div>
       </div>
-      <FooterTemplateTwo/>
+      <FooterTemplateTwo />
     </section>
   );
 }
@@ -155,10 +155,7 @@ const HomeQuickLinkCard = ({ title, icon, desc }) => {
           </div>
         </div>
         <div className="">
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="h-[30px] "
-          />
+          <FontAwesomeIcon icon={faChevronRight} className="h-[30px] " />
         </div>
       </div>
     </Link>

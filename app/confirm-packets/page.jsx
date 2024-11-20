@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import CustomButton from "@/components/CustomButton";
 import CustomCheckbox from "@/components/CustomCheckbox/CustomCheckbox";
 import FooterTemplateTwo from "@/components/FooterTemplateTwo";
@@ -16,20 +16,20 @@ const ConfirmPacket = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log( data);
+    console.log(data);
   };
 
   return (
     <section className="w-full h-full ">
-      <header className="mt-[40px] px-[20px]"> 
+      <header className="mt-[40px] px-[20px]">
         <div className="flex w-full relative ">
-          <Link href='/' className=''>
-          <Image
-            src="/assets/Fdor_dropppies.png"
-            width={95}
-            height={37}
-            alt="fdor_logo"
-          />
+          <Link href="/" className="">
+            <Image
+              src="/assets/Fdor_dropppies.png"
+              width={95}
+              height={37}
+              alt="fdor_logo"
+            />
           </Link>
           <HamBurgerMenu />
         </div>
@@ -43,15 +43,19 @@ const ConfirmPacket = () => {
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col gap-[5px] w-full ">
-            {
-              Array.from({ length: 5 }).map((_, index) => (
-                <div key={index} className="flex justify-between items-center  bg-white rounded-[10px] px-[10px] pt-[7px] pb-[9px] relative">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <div
+                key={index}
+                className="flex justify-between items-center  bg-white rounded-[10px] px-[10px] pt-[7px] pb-[9px] relative"
+              >
                 <div className="">
                   <div className="flex gap-[3px] items-end">
                     <h3 className="text-26 leading-[0.8] font-bold text-maingreen">
                       6
                     </h3>
-                    <p className="text-12 font-semibold text-mainblue">x1 Pack</p>
+                    <p className="text-12 font-semibold text-mainblue">
+                      x1 Pack
+                    </p>
                   </div>
                   <p className="text-10 text-secondarytext mt-[2px]">
                     6 pack containing 1
@@ -68,19 +72,18 @@ const ConfirmPacket = () => {
                   />
                 </div>
               </div>
-              ))
-            }
-         
+            ))}
           </div>
           <div className="flex-center mt-[41px] flex-col gap-[22px]">
-            <CustomButton title={'Confirm'} className='max-w-[223px]'/>
+            <CustomButton title={"Confirm"} className="max-w-[223px]" />
             <p className="text-10 text-secondarytext max-w-[304px] text-center ">
-            By confirming, you agree that you have received the above mentioned packets in the correct order.
+              By confirming, you agree that you have received the above
+              mentioned packets in the correct order.
             </p>
           </div>
         </form>
       </div>
-      <FooterTemplateTwo/>
+      <FooterTemplateTwo />
     </section>
   );
 };
